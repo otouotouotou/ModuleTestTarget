@@ -11,6 +11,14 @@ Asrishの動作確認用アプリ。通常の Android
 - 依存ライブラリなし (Android 標準 API のみ)
 - 画面は縦固定、UI は 11 言語対応、ダークテーマは AMOLED 純黒
 
+## スクリーンショット
+メイン画面 (左: 日本語 / 右: 英語)
+
+<p>
+<img src="docs/images/main-ja.png" width="300" alt="メイン画面 (日本語)">
+<img src="docs/images/main-en.png" width="300" alt="メイン画面 (英語)">
+</p>
+
 ## 画面の内容
 
 ### 現在の状態 (0.5 秒ごとに自動更新)
@@ -66,6 +74,14 @@ and on screen, what the module's settings actually do to it.
 - Current version: v0.6.0 (versionCode 11)
 - No dependencies (Android standard APIs only)
 - Portrait-locked, UI in 11 languages, AMOLED pure-black dark theme
+
+## Screenshots
+The main screen (left: Japanese / right: English)
+
+<p>
+<img src="docs/images/main-ja.png" width="300" alt="Main screen (Japanese)">
+<img src="docs/images/main-en.png" width="300" alt="Main screen (English)">
+</p>
 
 ## What it shows
 
