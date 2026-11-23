@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 通知テスト用 (Android 13 以降は実行時許可も必要) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- テーマは自前リソースで NoActionBar を明示する (HyperOS 3 では
+         未指定だと標準バーがコンテンツに重なることがあるため。
+         他プロジェクトと同方針)。v0.1.2〜 ダークテーマ追従
+         (values / values-night、ダーク側は AMOLED 純黒) -->
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.TestTarget"
+        android:supportsRtl="true">
+
+        <!-- テストの的として表示条件を一定にするため縦画面固定 (v0.1.1〜) -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 純黒背景の上で状態ボックスが判別できるよう、わずかに浮かせる -->
+    <color name="status_bg">#1A1A1A</color>
+
+    <!-- レイアウト方向テストのマーカー (黒背景でも見える明るめの青) -->
+    <color name="marker_bg">#42A5F5</color>
+    <color name="marker_text">#000000</color>
+</resources>

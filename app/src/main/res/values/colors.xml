@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 状態表示ボックスの背景。ダークは values-night 側 -->
+    <color name="status_bg">#F0F0F0</color>
+
+    <!-- レイアウト方向テストのマーカー (START ブロック・四角) -->
+    <color name="marker_bg">#1565C0</color>
+    <color name="marker_text">#FFFFFF</color>
+</resources>
