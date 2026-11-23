@@ -2,8 +2,8 @@
 
 日本語 | [English](#moduletesttarget-english)
 
-Asrishの動作確認用アプリ。通常の Android
-アプリで、モジュールではない。スコープにこのアプリを指定して、
+Asrishの動作確認用アプリ。通常のAndroid
+アプリです。スコープにこのアプリを指定して、
 モジュール側の設定がどう効くかを数値と見た目で確認する。
 
 - パッケージ名: com.overnight.testtarget
