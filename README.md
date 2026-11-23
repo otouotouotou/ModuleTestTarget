@@ -2,7 +2,7 @@
 
 日本語 | [English](#moduletesttarget-english)
 
-LSPosed モジュールの動作確認用ターゲットアプリ。通常の Android
+Asrishの動作確認用ターゲットアプリ。通常の Android
 アプリで、モジュールではない。スコープにこのアプリを指定して、
 モジュール側の設定がどう効くかを数値と見た目で確認する。
 
@@ -58,7 +58,7 @@ Apache License 2.0
 
 [日本語](#moduletesttarget) | English
 
-A target app for verifying LSPosed modules. A plain Android app,
+A target app for verifying Asrish. A plain Android app,
 not a module. Scope this app in a module and check, in numbers
 and on screen, what the module's settings actually do to it.
 
