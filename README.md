@@ -2,7 +2,7 @@
 
 日本語 | [English](#moduletesttarget-english)
 
-Asrishの動作確認用ターゲットアプリ。通常の Android
+Asrishの動作確認用アプリ。通常の Android
 アプリで、モジュールではない。スコープにこのアプリを指定して、
 モジュール側の設定がどう効くかを数値と見た目で確認する。
 
