@@ -80,6 +80,45 @@
             android:text="@string/screenshot_note"
             android:textSize="12sp" />
 
+        <!-- ウィンドウフラグテスト (画面ON維持 / ロック画面表示) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/section_window_flags"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/keepScreenOnToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textOff="@string/toggle_keep_on_add"
+            android:textOn="@string/toggle_keep_on_remove" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/screen_on_note"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/showWhenLockedToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textOff="@string/toggle_swl_add"
+            android:textOn="@string/toggle_swl_remove" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/swl_note"
+            android:textSize="12sp" />
+
         <!-- テキストサンプル -->
         <TextView
             android:layout_width="wrap_content"

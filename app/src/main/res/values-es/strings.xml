@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(no se pudo leer)</string>
     <string name="clipboard_state_copied">Copiado</string>
     <string name="clipboard_note">Para comprobar el bloqueo de lectura del portapapeles de Asrish. Con el bloqueo activado, el contenido copiado en otras aplicaciones no se puede leer; el copiado en esta aplicación sí.</string>
+    <string name="status_rotation">Rotación: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ Prueba de flags de ventana</string>
+    <string name="toggle_keep_on_add">Añadir FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">Quitar FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">Cuando está activado, la pantalla normalmente permanece encendida. Éxito si un módulo en "No mantener encendida" hace que el estado superior sea OFF.</string>
+    <string name="toggle_swl_add">Activar mostrar en pantalla de bloqueo</string>
+    <string name="toggle_swl_remove">Desactivar mostrar en pantalla de bloqueo</string>
+    <string name="swl_note">Con la visualización en pantalla de bloqueo activada en esta propia app, éxito si un módulo en "No mostrar" la mantiene fuera de la pantalla de bloqueo.</string>
 </resources>

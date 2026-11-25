@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(не удалось прочитать)</string>
     <string name="clipboard_state_copied">Скопировано</string>
     <string name="clipboard_note">Для проверки блокировки чтения буфера обмена в Asrish. При включённой блокировке содержимое, скопированное в других приложениях, не читается, а скопированное здесь — читается.</string>
+    <string name="status_rotation">Поворот: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ Тест флагов окна</string>
+    <string name="toggle_keep_on_add">Установить FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">Снять FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">Когда включён, экран обычно не гаснет. Успех, если модуль в режиме "Не оставлять включённым" делает статус выше OFF.</string>
+    <string name="toggle_swl_add">Включить показ на экране блокировки</string>
+    <string name="toggle_swl_remove">Отключить показ на экране блокировки</string>
+    <string name="swl_note">Когда показ на экране блокировки включён в самом этом приложении, успех, если модуль в режиме "Не показывать" не даёт ему появиться на экране блокировки.</string>
 </resources>

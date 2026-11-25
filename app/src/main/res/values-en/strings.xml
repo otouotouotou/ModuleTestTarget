@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(could not read)</string>
     <string name="clipboard_state_copied">Copied</string>
     <string name="clipboard_note">For checking the Asrish feature "Block clipboard reads". With blocking ON, content copied in other apps cannot be read; content copied in this app can.</string>
+    <string name="status_rotation">Rotation: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ Window flag tests</string>
+    <string name="toggle_keep_on_add">Add FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">Remove FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">When ON, the screen normally stays on. Success if a module set to "Don\'t keep on" makes the status above read OFF.</string>
+    <string name="toggle_swl_add">Enable show on lock screen</string>
+    <string name="toggle_swl_remove">Disable show on lock screen</string>
+    <string name="swl_note">With this app\'s own show-on-lock enabled, success if a module set to "Don\'t show" keeps it off the lock screen.</string>
 </resources>

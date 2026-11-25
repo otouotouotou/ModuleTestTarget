@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(lecture impossible)</string>
     <string name="clipboard_state_copied">Copié</string>
     <string name="clipboard_note">Pour vérifier le blocage de lecture du presse-papiers par Asrish. Blocage activé : le contenu copié dans une autre application est illisible, celui copié ici reste lisible.</string>
+    <string name="status_rotation">Rotation : %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ Test des flags de fenêtre</string>
+    <string name="toggle_keep_on_add">Ajouter FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">Retirer FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">Quand il est activé, l\'écran reste normalement allumé. Succès si un module réglé sur « Ne pas garder allumé » fait passer l\'état ci-dessus à OFF.</string>
+    <string name="toggle_swl_add">Activer l\'affichage sur l\'écran de verrouillage</string>
+    <string name="toggle_swl_remove">Désactiver l\'affichage sur l\'écran de verrouillage</string>
+    <string name="swl_note">Avec l\'affichage sur l\'écran de verrouillage activé dans cette application elle-même, succès si un module réglé sur « Ne pas afficher » le garde hors de l\'écran de verrouillage.</string>
 </resources>

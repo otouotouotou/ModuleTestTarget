@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(읽을 수 없음)</string>
     <string name="clipboard_state_copied">복사됨</string>
     <string name="clipboard_note">Asrish의 "클립보드 읽기 차단" 확인용. 차단을 켜면 다른 앱에서 복사한 내용은 읽을 수 없고, 이 앱에서 복사한 내용만 읽을 수 있습니다.</string>
+    <string name="status_rotation">회전: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ 윈도우 플래그 테스트</string>
+    <string name="toggle_keep_on_add">FLAG_KEEP_SCREEN_ON 설정</string>
+    <string name="toggle_keep_on_remove">FLAG_KEEP_SCREEN_ON 해제</string>
+    <string name="screen_on_note">ON이면 보통 화면이 꺼지지 않는다. 모듈에서 "켜짐 유지 안 함"으로 설정했을 때 위 상태가 OFF가 되면 성공.</string>
+    <string name="toggle_swl_add">잠금 화면 표시 켜기</string>
+    <string name="toggle_swl_remove">잠금 화면 표시 끄기</string>
+    <string name="swl_note">이 앱 자체가 잠금 화면 표시를 켠 상태에서, 모듈에서 "표시 안 함"으로 설정했을 때 잠금 화면 위에 나타나지 않으면 성공.</string>
 </resources>

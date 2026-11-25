@@ -16,6 +16,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
+import android.view.Surface
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
@@ -32,9 +33,14 @@ import java.util.Locale
  * 動作確認用ターゲットアプリ。モジュール側の設定がこのアプリにどう
  * 効いているかを、数値と見た目で確認できるようにする。
  *
- * - 現在の状態: 向き / 画面サイズ (px・dp) / density / フォント倍率 / ロケール
+ * - 現在の状態: 向き / 回転 (0/90/180/270°) / 画面サイズ (px・dp) /
+ *   density / フォント倍率 / ロケール
  *   / ロック画面表示の判定 / 画面ロック状態
  * - FLAG_SECURE トグル: スクリーンショット制御の確認用
+ * - ウィンドウフラグテスト: FLAG_KEEP_SCREEN_ON トグル (画面ON維持の
+ *   確認用) と setShowWhenLocked トグル (ロック画面表示の確認用)。
+ *   状態表示の回転と FLAG_KEEP_SCREEN_ON は向き (逆・センサー) と
+ *   画面ON維持の物差し
  * - テキストサンプル: フォント倍率・DPI・翻訳の確認用
  * - 通知テスト: 通常 / 継続 / 音あり / 繰り返しの投稿と、投稿した
  *   通知オブジェクトの flags / defaults / sound の読み戻し表示
@@ -104,6 +110,24 @@ class MainActivity : Activity() {
             } else {
                 window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
             }
+            updateStatus()
+        }
+
+        // 画面ON維持テスト: このアプリ自身が FLAG_KEEP_SCREEN_ON を付け外しする
+        val keepScreenOnToggle = findViewById<ToggleButton>(R.id.keepScreenOnToggle)
+        keepScreenOnToggle.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+            } else {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+            }
+            updateStatus()
+        }
+
+        // ロック画面表示テスト: このアプリ自身が setShowWhenLocked を切り替える
+        val showWhenLockedToggle = findViewById<ToggleButton>(R.id.showWhenLockedToggle)
+        showWhenLockedToggle.setOnCheckedChangeListener { _, isChecked ->
+            setShowWhenLocked(isChecked)
             updateStatus()
         }
 
@@ -177,6 +201,23 @@ class MainActivity : Activity() {
         val locale: Locale = conf.locales[0]
         val secureOn =
             (window.attributes.flags and WindowManager.LayoutParams.FLAG_SECURE) != 0
+        val keepScreenOn =
+            (window.attributes.flags and
+                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON) != 0
+        // 回転 (0/90/180/270): 縦横だけでは区別できない「逆」と
+        // センサーの効きを数値で切り分けるための読み出し
+        val rotation = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            display?.rotation ?: Surface.ROTATION_0
+        } else {
+            @Suppress("DEPRECATION")
+            windowManager.defaultDisplay.rotation
+        }
+        val rotationDeg = when (rotation) {
+            Surface.ROTATION_90 -> 90
+            Surface.ROTATION_180 -> 180
+            Surface.ROTATION_270 -> 270
+            else -> 0
+        }
         val keyguardLocked =
             getSystemService(KeyguardManager::class.java)?.isKeyguardLocked == true
         // ロック画面表示の判定: Activity.setShowWhenLocked の状態は
@@ -200,6 +241,7 @@ class MainActivity : Activity() {
         val onOff = if (secureOn) "ON" else "OFF"
         statusText.text = buildString {
             appendLine(getString(R.string.status_orientation, orientation))
+            appendLine(getString(R.string.status_rotation, rotationDeg))
             appendLine(getString(R.string.status_screen_px, dm.widthPixels, dm.heightPixels))
             appendLine(getString(R.string.status_screen_dp, widthDp, heightDp))
             appendLine(getString(R.string.status_smallest_width, conf.smallestScreenWidthDp))
@@ -214,6 +256,12 @@ class MainActivity : Activity() {
             )
             appendLine(getString(R.string.status_elapsed, elapsed))
             appendLine(getString(R.string.status_flag_secure, onOff))
+            appendLine(
+                getString(
+                    R.string.status_flag_keep_screen_on,
+                    if (keepScreenOn) "ON" else "OFF"
+                )
+            )
             appendLine(
                 getString(R.string.status_show_when_locked, showWhenLockedText)
             )

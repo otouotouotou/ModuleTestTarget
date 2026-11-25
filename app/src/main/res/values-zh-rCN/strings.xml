@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(无法读取)</string>
     <string name="clipboard_state_copied">已复制</string>
     <string name="clipboard_note">用于检查 Asrish 的“阻止读取剪贴板”。开启阻止后，在其他应用中复制的内容无法读取，在本应用中复制的内容可以读取。</string>
+    <string name="status_rotation">旋转: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ 窗口标志测试</string>
+    <string name="toggle_keep_on_add">添加 FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">移除 FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">开启时屏幕通常保持常亮。若模块设为"不保持常亮"后上方状态变为 OFF 则成功。</string>
+    <string name="toggle_swl_add">启用锁屏显示</string>
+    <string name="toggle_swl_remove">禁用锁屏显示</string>
+    <string name="swl_note">在本应用自身启用锁屏显示的状态下，若模块设为"不显示"后它不再出现在锁屏上则成功。</string>
 </resources>

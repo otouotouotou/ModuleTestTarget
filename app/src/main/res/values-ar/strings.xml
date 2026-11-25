@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(تعذرت القراءة)</string>
     <string name="clipboard_state_copied">تم النسخ</string>
     <string name="clipboard_note">للتحقق من حظر قراءة الحافظة في Asrish. عند تفعيل الحظر، لا يمكن قراءة المحتوى المنسوخ في تطبيقات أخرى، ويمكن قراءة المحتوى المنسوخ هنا.</string>
+    <string name="status_rotation">الدوران: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ اختبار أعلام النافذة</string>
+    <string name="toggle_keep_on_add">إضافة FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">إزالة FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">عند التشغيل تبقى الشاشة مضيئة عادة. ينجح الاختبار إذا جعلت وحدة مضبوطة على عدم الإبقاء الحالة أعلاه OFF.</string>
+    <string name="toggle_swl_add">تفعيل الإظهار على شاشة القفل</string>
+    <string name="toggle_swl_remove">تعطيل الإظهار على شاشة القفل</string>
+    <string name="swl_note">مع تفعيل الإظهار على شاشة القفل في هذا التطبيق نفسه، ينجح الاختبار إذا منعت وحدة مضبوطة على عدم الإظهار ظهوره على شاشة القفل.</string>
 </resources>

@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(nicht lesbar)</string>
     <string name="clipboard_state_copied">Kopiert</string>
     <string name="clipboard_note">Zum Prüfen der Asrish-Sperre für das Lesen der Zwischenablage. Bei aktiver Sperre sind Inhalte aus anderen Apps nicht lesbar, hier kopierte Inhalte schon.</string>
+    <string name="status_rotation">Drehung: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ Fenster-Flag-Tests</string>
+    <string name="toggle_keep_on_add">FLAG_KEEP_SCREEN_ON setzen</string>
+    <string name="toggle_keep_on_remove">FLAG_KEEP_SCREEN_ON entfernen</string>
+    <string name="screen_on_note">Wenn AN, bleibt der Bildschirm normalerweise an. Erfolg, wenn ein Modul auf "Nicht an lassen" den Status oben auf OFF bringt.</string>
+    <string name="toggle_swl_add">Anzeige auf Sperrbildschirm aktivieren</string>
+    <string name="toggle_swl_remove">Anzeige auf Sperrbildschirm deaktivieren</string>
+    <string name="swl_note">Wenn die Anzeige auf dem Sperrbildschirm in dieser App selbst aktiviert ist: Erfolg, wenn ein Modul auf "Nicht anzeigen" sie vom Sperrbildschirm fernhält.</string>
 </resources>

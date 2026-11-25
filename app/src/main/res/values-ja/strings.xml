@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(読めませんでした)</string>
     <string name="clipboard_state_copied">コピーしました</string>
     <string name="clipboard_note">Asrish の「クリップボードの読み取りをブロック」の確認用。ブロック ON では、他のアプリでコピーした内容は読めず、このアプリでコピーした内容だけ読める。</string>
+    <string name="status_rotation">回転: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ ウィンドウフラグテスト</string>
+    <string name="toggle_keep_on_add">FLAG_KEEP_SCREEN_ON を付ける</string>
+    <string name="toggle_keep_on_remove">FLAG_KEEP_SCREEN_ON を外す</string>
+    <string name="screen_on_note">ON のとき通常は画面が消えない。モジュールで「ONのままにしない」にして、上の状態表示が OFF になれば成功。</string>
+    <string name="toggle_swl_add">ロック画面表示を有効にする</string>
+    <string name="toggle_swl_remove">ロック画面表示を無効にする</string>
+    <string name="swl_note">このアプリ自身がロック画面表示を有効にした状態で、モジュールで「表示しない」にして、ロック画面の上に出なくなれば成功。</string>
 </resources>

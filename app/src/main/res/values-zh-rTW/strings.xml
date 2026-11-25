@@ -66,4 +66,13 @@
     <string name="clipboard_state_empty">(無法讀取)</string>
     <string name="clipboard_state_copied">已複製</string>
     <string name="clipboard_note">用於檢查 Asrish 的「阻止讀取剪貼簿」。開啟阻止後，在其他應用程式中複製的內容無法讀取，在本應用程式中複製的內容可以讀取。</string>
+    <string name="status_rotation">旋轉: %1$d°</string>
+    <string name="status_flag_keep_screen_on">FLAG_KEEP_SCREEN_ON: %1$s</string>
+    <string name="section_window_flags">■ 視窗旗標測試</string>
+    <string name="toggle_keep_on_add">添加 FLAG_KEEP_SCREEN_ON</string>
+    <string name="toggle_keep_on_remove">移除 FLAG_KEEP_SCREEN_ON</string>
+    <string name="screen_on_note">開啟時螢幕通常保持常亮。若模組設為"不保持常亮"後上方狀態變為 OFF 則成功。</string>
+    <string name="toggle_swl_add">啟用鎖定畫面顯示</string>
+    <string name="toggle_swl_remove">停用鎖定畫面顯示</string>
+    <string name="swl_note">在本應用自身啟用鎖定畫面顯示的狀態下，若模組設為"不顯示"後它不再出現在鎖定畫面上則成功。</string>
 </resources>
