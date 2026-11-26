@@ -57,6 +57,11 @@ DPI の見え方、翻訳モジュールの確認に。
 - v0.5.0: レイアウト方向テスト節を追加
 - v0.4.0: 通知テストを拡張 (投稿ボタン 5 種 + 通知の読み戻し)
 
+## 免責事項
+本アプリは無保証で提供されます。使用は自己責任で
+お願いします。本アプリの使用によって生じた不具合・損害に
+ついて、作者は責任を負いません。
+
 ## ライセンス
 Apache License 2.0
 
@@ -122,6 +127,11 @@ for mute checks.
 - v0.5.0: added the layout direction test section
 - v0.4.0: expanded the notification test (5 post buttons +
   notification readback)
+
+## Disclaimer
+This app is provided "as is", without any warranty. Use it
+at your own risk. The author takes no responsibility for any
+damage or malfunction caused by using this app.
 
 ## License
 Apache License 2.0
